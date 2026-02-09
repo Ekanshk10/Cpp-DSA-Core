@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n = 5;
+
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<=i; j++){
+            
+            if(i == j) cout<<true;
+            else if(i%2 == 0 && j%2==0)cout<<true;
+            else if(i%2!=0 && j%2!=0) cout<<true;
+            else cout<<false;
+
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
